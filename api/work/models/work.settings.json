@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "projets",
+  "collectionName": "works",
   "info": {
-    "name": "Projet",
-    "description": ""
+    "name": "work"
   },
   "options": {
     "increments": true,
@@ -12,19 +11,16 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "title": {
+      "type": "string"
+    },
     "stack": {
       "type": "string"
     },
     "description": {
-      "type": "text"
+      "type": "richtext"
     },
-    "link": {
-      "type": "string"
-    },
-    "title": {
-      "type": "string"
-    },
-    "image": {
+    "picturework": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
